@@ -1,0 +1,13 @@
+/* Color Palette 
+#88CCF1 Baby Blue
+#C1DFF0 Columbia Blue
+#3587A4 Blue Munsell
+#2D848A Metallic Seaweed
+#2D898B Dark Cyan
+*/
+
+body {
+    font-family: 'Roboto', sans-serif, helvetica;
+    font-size: 2em;
+    background-color: #88CCF1;
+}
