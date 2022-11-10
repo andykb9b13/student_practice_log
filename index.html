@@ -5,22 +5,40 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="app.css">
+    <title>Student Practice Log</title>
 </head>
 
 <body>
     <h1>Student Practice Log</h1>
     <section id="mainInput">
-        <div>
-            <label for="studentName">Student Name</label>
-            <input type="text">
-            <button>Add</button>
-        </div>
-        <div>
-            <label for="week">Week of Lesson</label>
-            <input type="text">
-            <button>Add</button>
-        </div>
+        <form action="text">
+            <div>
+                <label for="studentName">Student Name</label>
+                <input type="text">
+                <button>Add</button>
+            </div>
+            <div>
+                <label for="week">Week of Lesson</label>
+                <input type="text">
+                <button>Add</button>
+            </div>
+            <div>
+                <textarea name="assignments" id="" cols="30" rows="10">Notes for the Lesson</textarea>
+            </div>
+            <div>
+                <label for="technicalExercises">Technical Exercises</label>
+                <input type="text" name="technicalExercises">
+            </div>
+            <div>
+                <label for="scales">Scales</label>
+                <input type="text" name="scales">
+            </div>
+            <div>
+                <label for="pieces">Pieces</label>
+                <input type="text" name="pieces">
+            </div>
+        </form>
     </section>
 
 </body>
