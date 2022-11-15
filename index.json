@@ -1,0 +1,22 @@
+{
+    "nameOfStudent": "Andy",
+    "dateOfLesson": "11/2/22",
+    "specialNotes": [
+        "Play with better posture",
+        "Breathe deeper",
+        "Move wrist"
+    ],
+    "technicalExercises": [
+        "Arbans #20",
+        "Arbans #50",
+        "Foundations: slurs"
+    ],
+    "scales": [
+        "Bb",
+        "Eb",
+        "Ab"
+    ],
+    "pieces": [
+        "Cavatine"
+    ]
+}

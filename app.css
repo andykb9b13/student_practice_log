@@ -1,3 +1,38 @@
+h1 {
+    text-align: center;
+}
+
+body {
+    font-size: 2em;
+}
+
 input {
-    size: 100px;
+    width: 80%;
+    height: 30px
+}
+
+textarea {
+    width: 80%;
+}
+
+textarea::placeholder {
+    font-style: italic;
+    font-size: 20px;
+}
+
+#studentName,
+#week {
+    text-align: center;
+}
+
+#weeklyLog {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+input,
+select,
+textarea {
+    font-size: 20px;
 }

@@ -12,35 +12,27 @@
 <body>
     <h1>Student Practice Log</h1>
     <section id="mainInput">
-        <form action="text">
-            <div>
-                <label for="studentName">Student Name</label>
-                <input type="text">
-                <button>Add</button>
-            </div>
-            <div>
-                <label for="week">Week of Lesson</label>
-                <input type="text">
-                <button>Add</button>
-            </div>
-            <div>
-                <textarea name="assignments" id="" cols="30" rows="10">Notes for the Lesson</textarea>
-            </div>
-            <div>
-                <label for="technicalExercises">Technical Exercises</label>
-                <input type="text" name="technicalExercises">
-            </div>
-            <div>
-                <label for="scales">Scales</label>
-                <input type="text" name="scales">
-            </div>
-            <div>
-                <label for="pieces">Pieces</label>
-                <input type="text" name="pieces">
-            </div>
+        <form action="text" id="weeklyLog">
+            <label for="studentName">Student Name</label>
+            <input type="text" id="studentName">
+            <label for="week">Week of Lesson</label>
+            <input type="text" id="week">
+            <label for="specialNotes">Special Notes for the week</label>
+            <textarea name="specialNotes" id="specialNotes" cols="30" rows="10"
+                placeholder="Ex. Breathe deeply, move slide faster, etc."></textarea>
+            <label for="technicalExercises">Technical Exercises</label>
+            <textarea name="technicalExercises" id="technicalExercises" cols="30" rows="10"
+                placeholder="Ex. Arban's pg. 29 #23"></textarea>
+            <label for="scales">Scales</label>
+            <textarea name="scales" id="scales" cols="30" rows="10" placeholder="Ex. Ab Major - one octave"></textarea>
+            <label for="pieces">Pieces</label>
+            <textarea name="pieces" id="pieces" cols="30" rows="10" placeholder="Ex. Cavatine mm. 1-50"></textarea>
+            <button type="submit">Submit</button>
         </form>
     </section>
 
+
+    <script src="app.js"></script>
 </body>
 
 </html>
