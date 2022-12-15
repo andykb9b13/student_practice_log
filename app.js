@@ -60,6 +60,9 @@ function renderMessage() {
     lessonDisplay.innerText = "Student Name: " + lastWeek.studentName + "Week of Lesson:" + lastWeek.week + "Special Notes: " + lastWeek.specialNotes + "Pieces: " + lastWeek.pieces + "Technical Exercises: " + lastWeek.technicalExercises + "Scales: " + lastWeek.scales;
 }
 
+/* TODO I think I need to create some elements in the HTML to house the information and then hide them until 
+they are called by the "last lesson" event listener*/
+
 const form = document.querySelector('form');
 form.addEventListener('submit', handleSubmit);
 
