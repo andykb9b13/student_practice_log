@@ -7,10 +7,28 @@
 
 // function() id submit button => on submit listener {turn the data into json }
 
+var studentName = document.querySelector("#studentName");
+var week = document.querySelector("#week");
+var specialNotes = document.querySelector("#specialNotes");
+var technicalExercises = document.querySelector("#technicalExercises");
+var scales = document.querySelector("#scales");
+var pieces = document.querySelector("#pieces");
+
+var weeklyLog = {
+    studentName: studentName.value,
+    week: week.value,
+    specialNotes: specialNotes.value,
+    technicalExercises: technicalExercises.value,
+    scales: scales.value,
+    pieces: pieces.value,
+}
+
+localStorage.setItem("studentLog", JSON.stringify(weeklyLog))
+
 function handleSubmit(event) {
     event.preventDefault();
 
-    var weeklyLog = {
+    weeklyLog = {
         studentName: studentName.value,
         week: week.value,
         specialNotes: specialNotes.value,
@@ -24,30 +42,28 @@ function handleSubmit(event) {
 
 var lastLessonButton = document.createElement("button");
 document.body.appendChild(lastLessonButton);
-button.style.width = "100px"
-button.style.height = "75px"
-button.innerText = "Last Lesson"
+lastLessonButton.style.width = "100px"
+lastLessonButton.style.height = "75px"
+lastLessonButton.innerText = "Last Lesson"
+
+
 
 lastLessonButton.addEventListener("click", renderMessage);
 
+
 function renderMessage() {
-    lastWeek = localStorage.getItem(JSON.parse(weeklyLog))
-    if (lastWeek !== null) {
-        lessonDisplay = document.createElement("span");
-        document.body.appendChild(lessonDisplay);
-        lessonDisplay.innerText = lastWeek;
-    }
+    console.log("render message is clicked")
+    var lastWeek = JSON.parse(localStorage.getItem("studentLog"));
+    console.log(lastWeek)
+    lessonDisplay = document.createElement("p");
+    document.body.appendChild(lessonDisplay);
+    lessonDisplay.innerText = "Student Name: " + lastWeek.studentName + "Week of Lesson:" + lastWeek.week + "Special Notes: " + lastWeek.specialNotes + "Pieces: " + lastWeek.pieces + "Technical Exercises: " + lastWeek.technicalExercises + "Scales: " + lastWeek.scales;
 }
 
 const form = document.querySelector('form');
 form.addEventListener('submit', handleSubmit);
 
-var studentName = document.querySelector("#studentName");
-var week = document.querySelector("#week");
-var specialNotes = document.querySelector("#specialNotes");
-var technicalExercises = document.querySelector("#technicalExercises");
-var scales = document.querySelector("#scales");
-var pieces = document.querySelector("#pieces");
+
 
 
 
